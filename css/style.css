@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+}
+
+.banner {
+  color: yellow;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.btn {
+  background: green;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
