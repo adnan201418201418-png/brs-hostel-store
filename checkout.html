@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Checkout</h1>
+
+<form id="checkout-form">
+  <input required placeholder="Student Name">
+  <input required placeholder="Room Number">
+  <input required placeholder="Phone Number">
+
+  <input value="Inside Hostel" disabled>
+
+  <input value="Cash on Delivery" disabled>
+
+  <button type="submit">Place Order</button>
+</form>
+
+<script>
+document.getElementById("checkout-form").onsubmit = function(e){
+  e.preventDefault();
+  alert("Order placed successfully!");
+  localStorage.removeItem("cart");
+  window.location.href = "orders.html";
+};
+</script>
+
+</body>
+</html>
